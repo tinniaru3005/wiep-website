@@ -411,7 +411,11 @@ const WiEPWebsite = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg"></div>
+            <img
+              src="/wiep-logo.png"
+              alt="Logo"
+              className="w-12 h-12 rounded-lg"
+            />
               <span className="font-bold text-xl text-gray-900">WiEP</span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -455,7 +459,11 @@ const WiEPWebsite = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg"></div>
+              <img
+                src="/wiep-logo.png"
+                alt="Logo"
+                className="w-12 h-12 rounded-lg"
+              />
                 <span className="font-bold text-xl">WiEP Study Group</span>
               </div>
               <p className="text-gray-400">
