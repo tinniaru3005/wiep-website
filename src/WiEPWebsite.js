@@ -48,7 +48,8 @@ const WiEPWebsite = () => {
         { name: "Ethereum.org", url: "https://ethereum.org/", description: "The official Ethereum website" },
         { name: "Ethereum Foundation Blog", url: "https://blog.ethereum.org/", description: "Updates and insights on the Ethereum ecosystem" },
         { name: "Ethereum Roadmap", url: "https://ethereum.org/en/roadmap/", description: "Overview of Ethereum's major upgrades" },
-        { name: "EIPs", url: "https://eips.ethereum.org/", description: "Ethereum Improvement Proposals" }
+        { name: "EIPs", url: "https://eips.ethereum.org/", description: "Ethereum Improvement Proposals" },
+        { name: "EPF Wiki", url: "https://epf.wiki/#/", description: "Ethereum Protocol Fellowship Wiki" }
       ]
     },
     {
