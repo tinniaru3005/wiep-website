@@ -1,105 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#9333ea" />
-  
-  <!-- Primary Meta Tags -->
-  <title>Women in Ethereum Protocol (WiEP) | Study Group</title>
-  <meta name="title" content="Women in Ethereum Protocol (WiEP) | Study Group" />
-  <meta name="description" content="A supportive community for women interested in contributing to the Ethereum protocol. Learn, build, and contribute to the future of decentralized technology through our 10-week intensive program." />
-  <meta name="keywords" content="Ethereum, protocol development, women in tech, blockchain, open source, study group, mentorship, consensus layer, execution layer" />
-  <meta name="author" content="Women in Ethereum Protocol" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wiep.studygroup/" />
-  <meta property="og:title" content="Women in Ethereum Protocol (WiEP) | Study Group" />
-  <meta property="og:description" content="Join our 10-week intensive program to contribute to the Ethereum protocol. Expert mentorship, hands-on learning, and meaningful open-source contributions." />
-  <meta property="og:image" content="/og-image.jpg" />
-  <meta property="og:site_name" content="WiEP Study Group" />
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title> WiEP</title>
+  </head>
+  <body>
+    <noscript>WiEP</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://wiep.studygroup/" />
-  <meta property="twitter:title" content="Women in Ethereum Protocol (WiEP) | Study Group" />
-  <meta property="twitter:description" content="Join our 10-week intensive program to contribute to the Ethereum protocol. Expert mentorship, hands-on learning, and meaningful open-source contributions." />
-  <meta property="twitter:image" content="/og-image.jpg" />
-  <meta property="twitter:site" content="@wiepteam" />
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-  <!-- Favicons -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  
-  <!-- Manifest -->
-  <link rel="manifest" href="/manifest.json" />
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-  <!-- DNS Prefetch for external resources -->
-  <link rel="dns-prefetch" href="//discord.gg" />
-  <link rel="dns-prefetch" href="//github.com" />
-  <link rel="dns-prefetch" href="//docs.google.com" />
-  
-  <!-- Additional SEO optimization -->
-  <link rel="canonical" href="https://wiep.studygroup/" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-    
-    .loading-spinner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%);
-    }
-    
-    .spinner {
-      width: 40px;
-      height: 40px;
-      border: 4px solid #e5e7eb;
-      border-top: 4px solid #9333ea;
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    .loaded .loading-spinner {
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="loading-spinner">
-    <div class="spinner"></div>
-  </div>
-  
-  <div id="root"></div>
-  
-  <script type="module" src="/src/main.jsx"></script>
-  
-  <script>
-    window.addEventListener('load', function() {
-      document.body.classList.add('loaded');
-    });
-  </script>
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
