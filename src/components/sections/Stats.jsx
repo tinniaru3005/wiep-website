@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Code, MessageCircle, Calendar, GitPullRequest, Globe } from 'lucide-react';
+import { Users, Code, MessageCircle, Calendar, GitPullRequest, Globe, Clock } from 'lucide-react';
 
 const Stats = () => {
   const stats = [
@@ -32,3 +32,5 @@ const Stats = () => {
     </section>
   );
 };
+
+export default Stats;

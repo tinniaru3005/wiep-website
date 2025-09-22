@@ -104,4 +104,4 @@ const PreviousCohorts = () => {
   );
 };
 
-export { Hero, About, Stats, PreviousCohorts };
+export default PreviousCohorts;

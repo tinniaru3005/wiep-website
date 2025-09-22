@@ -17,7 +17,7 @@
   <meta property="og:url" content="https://wiep.studygroup/" />
   <meta property="og:title" content="Women in Ethereum Protocol (WiEP) | Study Group" />
   <meta property="og:description" content="Join our 10-week intensive program to contribute to the Ethereum protocol. Expert mentorship, hands-on learning, and meaningful open-source contributions." />
-  <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+  <meta property="og:image" content="/og-image.jpg" />
   <meta property="og:site_name" content="WiEP Study Group" />
 
   <!-- Twitter -->
@@ -25,17 +25,17 @@
   <meta property="twitter:url" content="https://wiep.studygroup/" />
   <meta property="twitter:title" content="Women in Ethereum Protocol (WiEP) | Study Group" />
   <meta property="twitter:description" content="Join our 10-week intensive program to contribute to the Ethereum protocol. Expert mentorship, hands-on learning, and meaningful open-source contributions." />
-  <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+  <meta property="twitter:image" content="/og-image.jpg" />
   <meta property="twitter:site" content="@wiepteam" />
 
   <!-- Favicons -->
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   
   <!-- Manifest -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="/manifest.json" />
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,61 +46,13 @@
   <link rel="dns-prefetch" href="//github.com" />
   <link rel="dns-prefetch" href="//docs.google.com" />
   
-  <!-- Schema.org structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Women in Ethereum Protocol",
-    "alternateName": "WiEP",
-    "url": "https://wiep.studygroup/",
-    "logo": "https://wiep.studygroup/logo.png",
-    "description": "A community committed to bringing gender diversity within the Ethereum ecosystem through hands-on protocol development education.",
-    "foundingDate": "2023",
-    "sameAs": [
-      "https://discord.gg/JvEVfKBY6W",
-      "https://x.com/wiepteam",
-      "https://github.com/wiepteam/studygroup"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "url": "https://discord.gg/JvEVfKBY6W"
-    },
-    "offers": {
-      "@type": "EducationalOccupationalProgram",
-      "name": "WiEP Study Group Cohort",
-      "description": "10-week intensive program for contributing to Ethereum protocol development",
-      "provider": {
-        "@type": "Organization",
-        "name": "Women in Ethereum Protocol"
-      },
-      "educationalCredentialAwarded": "Certificate of Completion",
-      "timeToComplete": "P10W",
-      "applicationStartDate": "2025-09-01",
-      "startDate": "2025-09-11"
-    }
-  }
-  </script>
-
   <!-- Additional SEO optimization -->
   <link rel="canonical" href="https://wiep.studygroup/" />
   <meta name="robots" content="index, follow" />
   <meta name="language" content="English" />
   <meta name="revisit-after" content="7 days" />
-  
-  <!-- Performance optimization -->
-  <link rel="preload" href="/fonts/Inter-var.woff2" as="font" type="font/woff2" crossorigin />
-  
-  <!-- Security headers -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' fonts.googleapis.com fonts.gstatic.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https:;" />
-  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-  <meta http-equiv="X-Frame-Options" content="DENY" />
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <style>
-    /* Critical CSS for above-the-fold content */
     body {
       margin: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -108,7 +60,6 @@
       -moz-osx-font-smoothing: grayscale;
     }
     
-    /* Loading spinner */
     .loading-spinner {
       display: flex;
       justify-content: center;
@@ -131,7 +82,6 @@
       100% { transform: rotate(360deg); }
     }
     
-    /* Hide loading spinner when React loads */
     .loaded .loading-spinner {
       display: none;
     }
@@ -146,35 +96,18 @@
     </div>
   </noscript>
   
-  <!-- Loading spinner -->
   <div class="loading-spinner">
     <div class="spinner"></div>
   </div>
   
-  <!-- React app root -->
   <div id="root"></div>
   
-  <!-- Analytics placeholder (add your analytics script here) -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> -->
+  <script type="module" src="/src/main.jsx"></script>
   
   <script>
-    // Mark page as loaded when React mounts
     window.addEventListener('load', function() {
       document.body.classList.add('loaded');
     });
-    
-    // Service worker registration (optional)
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function(registration) {
-            console.log('SW registered: ', registration);
-          })
-          .catch(function(registrationError) {
-            console.log('SW registration failed: ', registrationError);
-          });
-      });
-    }
   </script>
 </body>
 </html>
