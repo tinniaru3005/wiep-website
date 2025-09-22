@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import './WiEPWebsite.css';
-import { ChevronDown, Github, Twitter, MessageCircle, Users, Code, BookOpen, Heart } from 'lucide-react';
+import { ChevronDown, Github, Twitter, MessageCircle, Users, Code, BookOpen, Heart, ExternalLink } from 'lucide-react';
 
 const WiEPWebsite = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -203,6 +202,10 @@ const WiEPWebsite = () => {
               <MessageCircle className="w-4 h-4" />
               <span>Join Discord</span>
             </a>
+            <a href="https://github.com/wiepteam/studygroup/tree/main" className="inline-flex items-center space-x-2 bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors">
+              <Github className="w-4 h-4" />
+              <span>View on GitHub</span>
+            </a>
           </div>
         </div>
 
@@ -271,7 +274,7 @@ const WiEPWebsite = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github className="w-5 h-5" />
+                    <ExternalLink className="w-5 h-5" />
                   </a>
                 </div>
               </div>
@@ -480,6 +483,9 @@ const WiEPWebsite = () => {
                 <a href="https://hackmd.io/@poojaranjan/WiEPHandbook" className="text-gray-400 hover:text-white transition-colors">
                   <BookOpen className="w-5 h-5" />
                 </a>
+                <a href="https://github.com/wiepteam/studygroup/tree/main" className="text-gray-400 hover:text-white transition-colors">
+                  <Github className="w-5 h-5" />
+              </a>
               </div>
             </div>
           </div>
