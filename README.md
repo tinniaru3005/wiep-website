@@ -2,6 +2,11 @@
 
 A React-based website for the Women in Ethereum Protocol Study Group, providing information about the community, resources, and how to join the program.
 
+
+https://github.com/user-attachments/assets/43b32065-b934-4a65-aae6-9aa1d260e5f6
+
+
+
 ## 🌟 Overview
 
 The WiEP Study Group is a community committed to bringing gender diversity within the Ethereum ecosystem. This website serves as the main hub for information about the program, resources for learning the Ethereum protocol, and community guidelines.
